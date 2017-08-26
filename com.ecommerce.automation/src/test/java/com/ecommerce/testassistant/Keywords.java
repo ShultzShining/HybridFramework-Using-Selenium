@@ -32,6 +32,7 @@ public class Keywords {
         // Chrome Driver Path
 
             System.setProperty("webdriver.chrome.driver", "ChromeDriver/chromedriver");
+            
 
 
 
@@ -42,8 +43,10 @@ public class Keywords {
         }
 
         APP_LOGS.debug("Opening browser");
-        if(data.equals("Mozilla"))
-            driver=new FirefoxDriver();
+        if(data.equals("Mozilla")){
+        	System.setProperty("webdriver.gecko.driver", "C:/geckodriver-v0.17.0-win64/geckodriver.exe");
+        driver =new FirefoxDriver();
+        }
         else if(data.equals("IE"))
             driver=new InternetExplorerDriver();
         else if(data.equals("Chrome"))

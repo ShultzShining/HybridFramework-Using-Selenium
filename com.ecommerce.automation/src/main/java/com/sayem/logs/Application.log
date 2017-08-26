@@ -1,0 +1,46 @@
+08/26/2017 18:40:51 DEBUG devpinoyLogger:71 - Hello
+08/26/2017 18:40:51 DEBUG devpinoyLogger:72 - Properties loaded. Starting testing
+08/26/2017 18:40:51 DEBUG devpinoyLogger:78 - Intialize Suite xlsx
+08/26/2017 18:40:56 DEBUG devpinoyLogger:84 - Check out -- N
+08/26/2017 18:40:56 DEBUG devpinoyLogger:84 - Links verification -- N
+08/26/2017 18:40:56 DEBUG devpinoyLogger:84 - Login functionality -- Y
+08/26/2017 18:40:56 DEBUG devpinoyLogger:89 - ******Executing the Suite******Login functionality
+08/26/2017 18:40:56 DEBUG devpinoyLogger:93 - Register -- N
+08/26/2017 18:40:56 DEBUG devpinoyLogger:93 - RegisterWithFacebook -- N
+08/26/2017 18:40:56 DEBUG devpinoyLogger:93 - Login -- Y
+08/26/2017 18:40:56 DEBUG devpinoyLogger:97 - Executing the test case -> Login
+08/26/2017 18:40:56 DEBUG devpinoyLogger:103 - Iteration number 1
+08/26/2017 18:40:56 DEBUG devpinoyLogger:145 - openBrowser
+08/26/2017 18:40:56 DEBUG devpinoyLogger:45 - Opening browser
+08/26/2017 18:41:10 DEBUG devpinoyLogger:153 - PASS
+08/26/2017 18:41:10 DEBUG devpinoyLogger:145 - navigate
+08/26/2017 18:41:10 DEBUG devpinoyLogger:62 - Navigating to URL
+08/26/2017 18:41:17 DEBUG devpinoyLogger:153 - PASS
+08/26/2017 18:41:17 DEBUG devpinoyLogger:145 - clickLink_xpath
+08/26/2017 18:41:17 DEBUG devpinoyLogger:71 - Clicking on link 
+08/26/2017 18:41:18 DEBUG devpinoyLogger:153 - PASS
+08/26/2017 18:41:18 DEBUG devpinoyLogger:145 - pause
+08/26/2017 18:41:18 DEBUG devpinoyLogger:145 - closeBrowser
+08/26/2017 18:41:18 DEBUG devpinoyLogger:97 - Closing the browser
+08/26/2017 18:41:18 DEBUG devpinoyLogger:153 - PASS
+08/26/2017 18:41:20 DEBUG devpinoyLogger:103 - Iteration number 2
+08/26/2017 18:41:20 DEBUG devpinoyLogger:145 - openBrowser
+08/26/2017 18:41:20 DEBUG devpinoyLogger:45 - Opening browser
+08/26/2017 18:41:24 DEBUG devpinoyLogger:153 - PASS
+08/26/2017 18:41:24 DEBUG devpinoyLogger:145 - navigate
+08/26/2017 18:41:24 DEBUG devpinoyLogger:62 - Navigating to URL
+08/26/2017 18:41:31 DEBUG devpinoyLogger:153 - PASS
+08/26/2017 18:41:31 DEBUG devpinoyLogger:145 - clickLink_xpath
+08/26/2017 18:41:31 DEBUG devpinoyLogger:71 - Clicking on link 
+08/26/2017 18:41:32 DEBUG devpinoyLogger:153 - PASS
+08/26/2017 18:41:32 DEBUG devpinoyLogger:145 - pause
+08/26/2017 18:41:32 DEBUG devpinoyLogger:145 - closeBrowser
+08/26/2017 18:41:32 DEBUG devpinoyLogger:97 - Closing the browser
+08/26/2017 18:41:32 DEBUG devpinoyLogger:153 - PASS
+08/26/2017 18:41:32 DEBUG devpinoyLogger:93 - RequireValidation -- N
+08/26/2017 18:41:32 DEBUG devpinoyLogger:93 - LoginWithFacebook -- N
+08/26/2017 18:41:32 DEBUG devpinoyLogger:93 - Logout -- N
+08/26/2017 18:41:32 DEBUG devpinoyLogger:93 - LogoutWithFacebook -- N
+08/26/2017 18:41:32 DEBUG devpinoyLogger:93 - ResetPassword -- N
+08/26/2017 18:41:32 DEBUG devpinoyLogger:84 - My Account -- N
+08/26/2017 18:41:32 DEBUG devpinoyLogger:84 - Sales pages -- N
