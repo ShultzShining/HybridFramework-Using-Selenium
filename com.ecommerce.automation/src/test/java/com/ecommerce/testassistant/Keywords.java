@@ -1,4 +1,4 @@
-package com.ecommerce.testassistant;
+ package com.ecommerce.testassistant;
 
 
 
@@ -73,6 +73,17 @@ public class Keywords {
             driver.findElement(By.xpath(OR.getProperty(object))).click();
         }catch(Exception e){
             return Constants.KEYWORD_FAIL+" -- Not able to click on link"+e.getMessage();
+        }
+
+        return Constants.KEYWORD_PASS;
+    }
+    public String enterIntoTextBox_xpath(String object,String data){
+        APP_LOGS.debug("Entering data ");
+        try{
+            driver.findElement(By.xpath(OR.getProperty(object))).clear();
+            driver.findElement(By.xpath(OR.getProperty(object))).sendKeys(data);;
+        }catch(Exception e){
+            return Constants.KEYWORD_FAIL+" -- Not able to enter data "+e.getMessage();
         }
 
         return Constants.KEYWORD_PASS;

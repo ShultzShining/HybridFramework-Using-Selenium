@@ -8,9 +8,12 @@ import java.util.ArrayList;
 import java.util.Properties;
 
 import org.apache.log4j.Logger;
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.Test;
 
 import com.ecommerce.xls.read.*;
 import com.ecommerce.testassistant.*;
+import com.ecommerce.util.ReportUtil;
 
 public class DriverScript {
 
@@ -47,7 +50,8 @@ public class DriverScript {
         capturescreenShot_method =keywords.getClass().getMethod("captureScreenshot",String.class,String.class);
     }
 
-    public static void main(String[] args) throws IllegalAccessException, IllegalArgumentException, InvocationTargetException, IOException, NoSuchMethodException, SecurityException {
+    @Test
+    public static void appTest() throws IllegalAccessException, IllegalArgumentException, InvocationTargetException, IOException, NoSuchMethodException, SecurityException {
         FileInputStream fs = new FileInputStream("src/main/java/com/ecommerce/config/config.properties");
         CONFIG= new Properties();
         CONFIG.load(fs);
@@ -113,7 +117,7 @@ public class DriverScript {
                             // iterating through all keywords
                             resultSet= new ArrayList<String>();
                             executeKeywords();// no data with the test
-                            createXLSReport();
+                           // createXLSReport();
                         }
                     }
                 }
@@ -168,7 +172,7 @@ public class DriverScript {
             }
         }
     }
-
+    @AfterTest
     public void createXLSReport(){
 
         String colName=Constants.RESULT +(currentTestDataSetID-1);
@@ -211,8 +215,10 @@ public class DriverScript {
         }
         currentTestSuiteXLS.setCellData(currentTestCaseName, Constants.RESULT, currentTestDataSetID, Constants.KEYWORD_PASS);
         //	if(!currentTestSuiteXLS.getCellData(currentTestCaseName, "Runmode",currentTestDataSetID).equals("Y")){}
+     
 
     }
+   
 
 
 

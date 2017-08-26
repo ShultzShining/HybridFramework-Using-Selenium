@@ -1,9 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="My Sample Suite">
-  <test name="test1">
+  <test name="Test(Based on Excel - Suite)">
   <classes>
-  		<class name="com.shashi.practices.learning.LoginTest"></class>
+  		<class name="com.ecommerce.test.DriverScript"></class>
+  </classes>
+  </test> <!-- Test -->
+  
+   <test name="Generating Reports">
+  <classes>
+  		<class name="com.ecommerce.util.ReportUtil"></class>
   </classes>
   </test> <!-- Test -->
   
